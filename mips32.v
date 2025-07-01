@@ -1,4 +1,4 @@
-module pipe_MIPS32 (clk1,clk2);    //5 stage pipelined RISC MIPS32 processor 
+module pipe_MIPS32 (clk1,clk2);    //module initialization 
 
 input  clk1,clk2;          //two phase clock
 
