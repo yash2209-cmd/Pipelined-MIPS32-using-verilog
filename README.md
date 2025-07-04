@@ -39,4 +39,8 @@ opcode    -    instruction
 001100    -      slti  
 001101    -      bneqz  
 001110    -      beqz  
+
+  # Waveform for the testbench output
+<img width="1033" alt="Screenshot 2025-06-30 at 10 32 21 AM" src="https://github.com/user-attachments/assets/68093b1e-c28a-4809-8cb2-6e474038d65b" />
+Processor stops all operations after HALTED is executed.
   
