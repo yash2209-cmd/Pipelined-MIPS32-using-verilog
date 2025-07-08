@@ -2,12 +2,12 @@ module pipe_MIPS32 (clk1,clk2);
 
 input  clk1,clk2;          //two phase clock
 
-reg [31:0] PC, IF_ID_IR, IF_ID_NPC;                             //stage 1 latches
-reg [31:0] ID_EX_IR, ID_EX_NPC, ID_EX_A, ID_EX_B, ID_EX_Imm;    //stage 2 latches
-reg [2:0] ID_EX_type, EX_MEM_type, MEM_WB_type;                 //stage 3 latches
+reg [31:0] PC, IF_ID_IR, IF_ID_NPC;                             
+reg [31:0] ID_EX_IR, ID_EX_NPC, ID_EX_A, ID_EX_B, ID_EX_Imm;    
+reg [2:0] ID_EX_type, EX_MEM_type, MEM_WB_type;                 
 reg [31:0] EX_MEM_IR, EX_MEM_ALUout, EX_MEM_B;                  
-reg EX_MEM_cond;                                                //stage 4 latches
-reg [31:0] MEM_WB_IR, MEM_WB_ALUout, MEM_WB_LMD;                //stage 5 latches
+reg EX_MEM_cond;                                                
+reg [31:0] MEM_WB_IR, MEM_WB_ALUout, MEM_WB_LMD;                        //latches
 
 reg [31:0] Reg [0:31];     //register bank (32 x 32)
 reg [31:0] Mem [0:1023];    //memory (1024 x 32)
